@@ -1,0 +1,161 @@
+// ion-fab-button {
+//   --background: var(--ion-color-step-150, #ffffff);
+//   --background-hover: var(--ion-color-step-200, #f2f2f2);
+//   --background-focused: var(--ion-color-step-250, #d9d9d9);
+//   --color: var(--ion-color-primary, #3880ff);
+// }
+
+// /*
+//  * Material Design uses the ripple for activated
+//  * so only style the iOS activated background
+//  */
+// .ios ion-fab-button {
+//   --background-activated: var(--ion-color-step-250, #d9d9d9);
+// }
+
+// $categories: (
+//   ionic: var(--ion-color-primary),
+//   angular: #ac282b,
+//   communication: #8e8d93,
+//   tooling: #fe4c52,
+//   services: #fd8b2d,
+//   design: #fed035,
+//   workshop: #69bb7b,
+//   food: #3bc7c4,
+//   documentation: #b16be3,
+//   navigation: #6600cc
+// );
+
+// @each $track, $value in map-remove($categories) {
+//   ion-item-sliding[track='#{$track}'] ion-label {
+//     padding-left: 10px;
+
+//     border-left: 2px solid $value;
+//   }
+// }
+
+.content {
+  padding: 20px 50px;
+
+  height: 100%;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-top: 5.4rem;
+      text-align: center;
+    }
+
+  }
+
+  
+  #text-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1.4rem;
+    text-align: center;
+
+    b {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: xx-large;
+    }
+
+    #logo-gov {
+
+      margin-left: 55px;
+    }
+  }
+
+  .form {
+    margin-top: 4rem;
+
+    .form-group {
+
+      display: block;
+
+      width: 100%;
+
+      label {
+
+        display: block;
+
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+
+        margin-bottom: .2rem;
+      }
+
+      input {
+        font-size: 20px;
+
+        padding: 15px 20px;
+        border-radius: 8px;
+
+        border: 1px solid #8B8B8B;
+        outline: none;
+
+        width: 100%;
+
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+
+      }
+
+    }
+
+    .submit {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+
+      button {
+        width: 100%;
+        padding: 15px;
+        background-color: #F48C06;
+
+        font-size: 20px;
+        border-radius: 10px;
+
+        font-weight: 500;
+
+        color: #fff;
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+
+  }
+
+}
+
+// .login-logo {
+//   min-height: 200px;
+
+//   padding: 20px 0;
+
+//   text-align: center;
+// }
+
+// .login-logo img {
+//   max-width: 150px;
+// }
+
+// .login-form {
+//   padding: 16px;
+// }
+
+// ion-input {
+//   margin-bottom: 10px;
+// }

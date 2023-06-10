@@ -1,0 +1,108 @@
+<!-- <ion-header border-none>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+  <div class="content">
+    
+    <div class="logo">
+      <img src="../../../assets/img/hacka/logo.png" alt="Ionic logo">
+      <!-- <b>
+        Entre para ter acesso à sua segurança
+      </b> -->
+    </div>
+
+    <div id="text-description">
+      <b>
+        Entre para ter acesso <br> à sua segurança
+      </b>
+    </div>
+
+    <form class="form" #loginForm="ngForm">
+
+      <div class="form-group">
+        <label for="email">E-mail/Matrícula</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail"         [(ngModel)]="login.username"
+        name="username"
+        type="text"
+        #username="ngModel">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Senha</label>
+        <input type="password" id="senha" placeholder="Digite sua senha"         [(ngModel)]="login.password"
+        name="password"
+        type="password"
+        #password="ngModel">
+      </div>
+
+      <div class="submit">
+        <button (click)="onLogin(loginForm)">Entrar</button>
+      </div>
+
+    </form>
+
+
+    <div id="divider">
+      <img src="../../../assets/img/hacka/or.png" alt="or">
+      <!-- <ion-item-divider></ion-item-divider> -->
+    </div>
+
+    <div id="google">
+      <img src="../../../assets/img/hacka/btn-google.png" alt="or">
+    </div>
+
+    <div id="gov">
+      <img src="../../../assets/img/hacka/btn-gov.png" alt="or">
+    </div>
+  </div>
+
+  
+
+  <!-- <div class="login-form">
+    <form #loginForm="ngForm" novalidate>
+      <ion-input
+        label="Username"
+        labelPlacement="stacked"
+        fill="solid"
+        [(ngModel)]="login.username"
+        name="username"
+        type="text"
+        #username="ngModel"
+        spellcheck="false"
+        autocapitalize="off"
+        errorText="Username is required"
+        required>
+      </ion-input>
+
+      <ion-input
+        label="Password"
+        labelPlacement="stacked"
+        fill="solid"
+        [(ngModel)]="login.password"
+        name="password"
+        type="password"
+        #password="ngModel"
+        errorText="Password is required"
+        required>
+      </ion-input>
+
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="onLogin(loginForm)" type="submit" expand="block">Login</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="onSignup()" color="light" expand="block">Signup</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div> -->
+
+</ion-content>

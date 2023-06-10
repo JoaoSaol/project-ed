@@ -1,0 +1,20 @@
+<!-- <ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content fullscreen="true">
+  <div class="slide-container" id="background">
+    <section class="slide">
+      <!-- <img src="assets/img/hacka/hero.png" class="slide-image" /> -->
+      <ion-fab (click)="startApp()">
+        <ion-fab-button>
+          <ion-icon name="chevron-forward-outline" color="white"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </section>
+  </div>
+</ion-content>

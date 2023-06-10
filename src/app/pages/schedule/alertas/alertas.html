@@ -1,0 +1,123 @@
+<ion-content>
+
+    <div class="content">
+
+        <div class="logo">
+            <!-- <img src="../../../assets/img/hacka/logo.png" alt="Ionic logo"> -->
+            <!-- <b>
+          Entre para ter acesso à sua segurança
+        </b> -->
+        </div>
+
+        <div id="text-description">
+            <b>
+                Alertas
+            </b>
+            <div id="logo-gov">
+                <img src="../../../../assets/img/hacka/alert-ico.png" alt="Ionic logo">
+            </div>
+        </div>
+
+        <form class="form" #loginForm="ngForm">
+
+            <div class="form-group">
+                <img src="../../../../assets/img/hacka/ameaca.png" alt="Ionic logo">
+            </div>
+
+            <div class="form-group">
+                <img src="../../../../assets/img/hacka/perseguicao.png" alt="Ionic logo">
+            </div>
+
+            <div class="form-group" id="open-modal">
+                <img src="../../../../assets/img/hacka/ataque.png" alt="Ionic logo">
+            </div>
+
+            <div class="form-group" id="open-modal-2">
+                <img src="../../../../assets/img/hacka/atencao.png" alt="Ionic logo">
+            </div>
+
+
+            <!-- <div class="form-group">
+          <img src="../../../assets/img/hacka/relatorios.png" alt="Ionic logo">
+        </div> -->
+            <!-- 
+            <div class="form-group">
+                <img src="../../../assets/img/hacka/info-box.png" alt="Ionic logo">
+            </div> -->
+
+            <div class="submit">
+                <!-- <button (click)="onLogin(loginForm)">Entrar</button> -->
+            </div>
+
+        </form>
+
+        <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+            <ng-template>
+                <!-- <ion-header>
+                    <ion-toolbar>
+
+                        <ion-title>Welcome</ion-title>
+                        <ion-buttons slot="end">
+                            <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+                        </ion-buttons>
+                    </ion-toolbar>
+                </ion-header> -->
+
+                <ion-content>
+                    <div style="
+                            padding: 20px 50px;
+                            height: 100%;
+
+                            background: #6A040F;
+                        
+                        
+                        
+                        
+                        ">
+                        <ion-buttons slot="start">
+                            <ion-button (click)="cancel()" style="color: white;">Fechar</ion-button>
+                        </ion-buttons>
+
+                        <div class="content">
+                            <div id="text-description-thanks">
+                                <b style="color: white; font-size: larger; width: 200px;">
+                                    Um alerta foi emitido!<br>
+                                    Alerta: Atenção e Perigo
+                                </b>
+
+                                <b style="color: white; font-size: larger; width: 200px;">
+                                    <ul>
+                                        <li>
+                                            Matenha a calma
+                                        </li>
+                                        <li>
+                                            Se esconda em um local seguro
+                                        </li>
+                                        <li>
+                                            Afast-se de uma ameaça
+                                        </li>
+                                        <li>
+                                            Evite chamar atenção
+                                        </li>
+                                        <li>
+                                            Assim que possível procure um abrigo seguro
+                                        </li>
+                                    </ul>
+                                    Ver no mapa locais seguros
+                                </b>
+                            </div>
+
+                            <div class="form">
+
+                                <div class="form-group">
+                                    <img src="../../../../assets/img/hacka/watch-map.png" alt="Ionic logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ion-content>
+            </ng-template>
+        </ion-modal>
+    </div>
+
+</ion-content>

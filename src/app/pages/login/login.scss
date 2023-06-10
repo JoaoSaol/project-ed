@@ -1,0 +1,135 @@
+.content {
+  padding: 20px 50px;
+
+  height: 100%;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-top: 5.4rem;
+      text-align: center;
+    }
+
+  }
+
+  
+  #text-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1.4rem;
+    text-align: center;
+
+    b {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+  }
+
+  .form {
+    margin-top: 4rem;
+
+    .form-group {
+
+      display: block;
+
+      width: 100%;
+
+      label {
+
+        display: block;
+
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+
+        margin-bottom: .2rem;
+      }
+
+      input {
+        font-size: 20px;
+
+        padding: 15px 20px;
+        border-radius: 8px;
+
+        border: 1px solid #8B8B8B;
+        outline: none;
+
+        width: 100%;
+
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+
+      }
+
+    }
+
+    .submit {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+
+      button {
+        width: 100%;
+        padding: 15px;
+        background-color: #F48C06;
+
+        font-size: 20px;
+        border-radius: 10px;
+
+        font-weight: 500;
+
+        color: #fff;
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+
+  }
+
+  #divider {
+    // background: red;
+    margin-top: 50px;
+  }
+
+  #google {
+    // background: red;
+    margin-top: 20px;
+    margin-bottom: -40px;
+  }
+
+  #gov {
+    // background: red;
+    margin-top: 10px;
+  }
+
+}
+
+// .login-logo {
+//   min-height: 200px;
+
+//   padding: 20px 0;
+
+//   text-align: center;
+// }
+
+// .login-logo img {
+//   max-width: 150px;
+// }
+
+// .login-form {
+//   padding: 16px;
+// }
+
+// ion-input {
+//   margin-bottom: 10px;
+// }

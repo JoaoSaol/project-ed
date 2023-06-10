@@ -1,0 +1,74 @@
+<ion-content>
+
+    <div class="content">
+
+        <div class="logo">
+            <!-- <img src="../../../assets/img/hacka/logo.png" alt="Ionic logo"> -->
+            <!-- <b>
+          Entre para ter acesso à sua segurança
+        </b> -->
+        </div>
+
+        <div id="text-description">
+            <b>
+                Denúncias
+            </b>
+            <div id="logo-gov">
+                <img src="../../../../assets/img/hacka/denuncias-ico.png" alt="Ionic logo">
+            </div>
+        </div>
+
+        <form class="form" #loginForm="ngForm">
+            <div id="text-description-thanks">
+                <b>
+                    Obrigado por reportar!
+                </b>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Matrícula</label>
+                <input type="email" id="email" placeholder="Digite sua Matrícula" value="G45682F4">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Instituição</label>
+                <input type="text" id="senha" placeholder="Digite sua Instituição" value="Escola Goiana">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Categoria</label>
+
+                <select name="cars">
+                    <option value="volvo">Selecione a categoria</option>
+                    <option value="saab">Ameaça</option>
+                    <option value="opel">Perseguição</option>
+                    <option value="audi">Ataque</option>
+                    <option value="assedio">Assédio</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">O que aconteceu</label>
+                <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="submit">
+                <button>Entrar</button>
+              </div>
+
+            <!-- <div class="form-group">
+          <img src="../../../assets/img/hacka/relatorios.png" alt="Ionic logo">
+        </div> -->
+
+            <!-- <div class="form-group">
+                <img src="../../../assets/img/hacka/info-box.png" alt="Ionic logo">
+            </div> -->
+
+            <div class="submit">
+                <!-- <button (click)="onLogin(loginForm)">Entrar</button> -->
+            </div>
+
+        </form>
+    </div>
+
+</ion-content>
